@@ -24,3 +24,8 @@ This project took me 2 days with research and trail and error of different APIs.
 
 - I learned about cross origin requests and its security concerns.
 - I learned about Open Graph Protocol by facebook
+
+## Links:
+
+- [Live Demo](https://linkview.netlify.app/)
+- [Source](https://github.com/Adityakadali/linkpreview)
