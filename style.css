@@ -1,5 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;700&display=swap");
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  color: hsl(193, 38%, 86%);
+}
+
+.loader {
+  margin-top: 5rem;
+  width: 48px;
+  height: 48px;
+  border: 5px solid hsl(193, 38%, 86%);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*------------
+---- main----- 
+-------------*/
+
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 5rem;
+  padding: 1em;
+}
+
+.main h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.search {
+  padding: 0.5em 1em;
+  border-radius: 0.25rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  background-color: hsl(193, 38%, 86%);
+  color: hsl(217, 19%, 24%);
+}
+
+.search-btn {
+  background-color: hsl(150, 100%, 66%);
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(218, 23%, 16%);
+}
+
+/*-----------
+---- card ----
+-------------*/
+
+.card {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  max-width: 40rem;
+}
+
+.card img {
+  max-height: 150px;
+  max-width: 150px;
+}
+
+.card h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  line-height: 1em;
+}
+
+.card p {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5em;
+}
+
+@media (max-width: 420px) {
+  .main h1 {
+    font-size: 3rem;
+  }
+
+  .search-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card--body {
+    text-align: center;
+  }
+
+  .card--img img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+  }
 }
